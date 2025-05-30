@@ -59,8 +59,8 @@ La gestion de la vitesse est essentielle dans divers contextes, notamment pour c
 <!-- Make sure the path to the picture is correct -->
 ![Block Diagram](Block-Diagram.png)
 ```
-[ Capteur Ultrasonique HC-SR04 ]   [ Capteur Ultrasonique HC-SR04 ]
-           |                                   |
+[ Capteur Ultrasonique HC-SR04 ]  
+           |                                   
            +-------------------------+---------+
                                      |
                 [ Arduino UNO R3 (Microcontrôleur) ]
@@ -102,12 +102,10 @@ La gestion de la vitesse est essentielle dans divers contextes, notamment pour c
 
 | Bibliothèque            | Description                                      | Utilisation                            |
 |-------------------------|--------------------------------------------------|----------------------------------------|
-| Wire.h                  | Communication I2C standard                       | Pour l'afficheur LCD 1602 en mode I2C          |
-| LiquidCrystal_I2C.h            | Contrôle simplifié de l'afficheur LCD I2C                 | Affichage de la vitesse en temps réel           |
-| SoftwareSerial.h        | 	Communication série supplémentaire                   | Communication avec le module Bluetooth HC-05                  |
-| NewPing.h                 | Gestion des capteurs ultrasoniques HC-SR04               | Mesure de la distance pour calculer la vitesse             |
-| Tone.h      | Génération de sons (buzzer)                  | Alerte sonore si la vitesse dépasse la limite             |
-| EEPROM.h       | Stockage des paramètres utilisateur                  | Sauvegarde de la vitesse maximale autorisée     |
+| SPI.h               | 	Suport pentru comunicarea SPI (Serial Peripheral Interface)                  | Comunicare cu display-ul TFT ST7735 (protocolul de bază)          |
+| Adafruit_GFX.h            | Biblioteca grafică de bază Adafruit               | Funcții pentru desenare (text, forme) pe display-ul TFT         |
+| Adafruit_ST7735.h      | 	Driver specific pentru display-uri TFT bazate pe controlerul ST7735               | Controlul direct al display-ului TFT ST7735 (inițializare, afișare)             |
+
 
 
 ## Journal de Bord
