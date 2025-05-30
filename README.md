@@ -102,9 +102,9 @@ La gestion de la vitesse est essentielle dans divers contextes, notamment pour c
 
 | Bibliothèque            | Description                                      | Utilisation                            |
 |-------------------------|--------------------------------------------------|----------------------------------------|
-| SPI.h               | 	Suport pentru comunicarea SPI (Serial Peripheral Interface)                  | Comunicare cu display-ul TFT ST7735 (protocolul de bază)          |
-| Adafruit_GFX.h            | Biblioteca grafică de bază Adafruit               | Funcții pentru desenare (text, forme) pe display-ul TFT         |
-| Adafruit_ST7735.h      | 	Driver specific pentru display-uri TFT bazate pe controlerul ST7735               | Controlul direct al display-ului TFT ST7735 (inițializare, afișare)             |
+| SPI.h               | 		Support pour la communication SPI (Serial Peripheral Interface)                | Gère la communication SPI nécessaire pour interagir avec l'écran TFT ST7735 (le protocole de base).         |
+| Adafruit_GFX.h            | 	Bibliothèque graphique de base Adafruit          | Fournit les fonctions génériques de dessin (texte, formes, lignes) utilisées pour afficher sur l'écran TFT.       |
+| Adafruit_ST7735.h      | 	Pilote spécifique pour les écrans TFT basés sur le contrôleur ST7735            | Permet l'initialisation et le contrôle direct de votre écran TFT ST7735 (comme l'effacement de l'écran, le réglage du curseur et l'affichage du texte).           |
 
 
 
